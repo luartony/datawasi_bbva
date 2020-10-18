@@ -1,0 +1,83 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Monedero Pyme</title>
+
+    
+  </head>
+  <body>
+    <style>
+      .navbar-custom {
+          background-color: #043263 !important;
+      }
+      .btn-custom{
+          background-color: #02A5A5 !important;
+      }
+
+      /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,2989d8+50,207cca+51,7db9e8+100;Blue+Gloss+Default */
+      /*background: #1e5799; /* Old browsers */
+      /*background: -moz-linear-gradient(top,  #1e5799 0%, #2989d8 50%, #207cca 51%, #7db9e8 100%); /* FF3.6-15 */
+      /*background: -webkit-linear-gradient(top,  #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
+      /*background: linear-gradient(to bottom,  #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, /*Opera12+, Safari7+ */
+      /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+    </style>
+    <nav class="navbar navbar-dark navbar-custom" style="background-color: red">
+      <a class="navbar-brand"><h1>Monedero PYME</h1></a>
+      <form class="form-inline">
+        <button class="btn btn-success btn-custom my-2 my-sm-0" type="submit">Solicita Tu crédito</button>
+      </form>
+    </nav>
+    <hr>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm text-center">
+          <h3>Descubre si tienes un préstamo PyME online</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm">
+          <form action="{% url 'consulta' %}">
+            <div class="form-group row">
+              <label for="inputEmail3" class="col-sm-2 col-form-label">Ingrese Número RUC</label>
+              <div class="col-sm-10">
+                <input type="number" name="RUC" class="form-control" id="inputEmail3" step="1" min="10000000000" max="99999999999">
+              </div>
+            </div>         
+            <div class="form-group row">
+              <div class="col-sm-2">Contactarme</div>
+              <div class="col-sm-10">
+                <div class="form-check">
+                  <input name="contacto" class="form-check-input" type="checkbox" id="gridCheck1">
+                  <label class="form-check-label" for="gridCheck1">
+                    Marque la opción si deseas que un asesor se ponga en contacto contigo.
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-sm-10">
+                <button type="submit" class="btn btn-primary btn-custom">Consultar</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>      
+    </div>
+    <hr>
+    
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>

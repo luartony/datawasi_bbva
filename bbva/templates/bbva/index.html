@@ -28,12 +28,11 @@
       /*background: -webkit-linear-gradient(top,  #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
       /*background: linear-gradient(to bottom,  #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, /*Opera12+, Safari7+ */
       /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
-
     </style>
     <nav class="navbar navbar-dark navbar-custom" style="background-color: red">
-      <a class="navbar-brand"><h1>Monedero PyME</h1></a>
-      <form class="form-inline">
-        <button class="btn btn-success btn-custom my-2 my-sm-0" type="submit">Solicita Tu crédito</button>
+      <a class="navbar-brand"><h1>Monedero PYME</h1></a>
+      <form class="form-inline" action="{% url 'credito' %}">
+        <button class="btn btn-success btn-custom my-2 my-sm-0" action="{% url 'credito' %}" type="submit">Solicita Tu crédito</button>
       </form>
     </nav>
     <hr style="margin: 1px">
