@@ -9,3 +9,5 @@ Las calificaciones se realizan en tiempo real mediante modelos de Machine Learni
 
 La solución se desarrolla para plataformas web y mobile haciendo uso de la tecnologías UX, Servicios Amazon en la nube.
 
+![alt text](demo/Monedero PyME.gif)
+
